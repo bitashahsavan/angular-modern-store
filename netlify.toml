@@ -1,6 +1,6 @@
 [build]
-  command = "npm run build"
-  publish = "dist\moderStore\browser"
+  command = "ng build"
+  publish = "dist/angular-modern-store"
 
 [[redirects]]
   from = "/*"
