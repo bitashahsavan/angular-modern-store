@@ -1,0 +1,38 @@
+<article class="product-card group ">
+ <div class="image-wrap relative">
+    <img [src]="product().imageUrl" [alt]="product().name" class="product-image" />
+    <ng-content />
+  </div>
+    <!-- <div class="hover-overlay">
+      <button type="button" class="quick-view-btn">Quick view</button>
+    </div> -->
+
+
+  <div class="product-body">
+    <div class="meta-row">
+      <span class="category">{{ product().category }}</span>
+      <span
+        class="status"
+        [class.status-in-stock]="product().inStock"
+        [class.status-out]="!product().inStock"
+      >
+        {{ product().inStock ? 'In Stock' : 'Out of Stock' }}
+      </span>
+    </div>
+
+    <h2 class="product-name">{{ product().name }}</h2>
+    <p class="product-description">{{ product().description }}</p>
+
+    <div class="footer-row">
+      <div>
+        <p class="price">${{ product().price }}</p>
+        <p class="rating">⭐ {{ product().rating }} ({{ product().reviewCount }} reviews)</p>
+      </div>
+
+      <button type="button" (click)="addToCardCliked.emit(product())" class="cart-btn">
+        <mat-icon>shopping_cart</mat-icon>
+        Add to cart
+      </button>
+    </div>
+  </div>
+</article>

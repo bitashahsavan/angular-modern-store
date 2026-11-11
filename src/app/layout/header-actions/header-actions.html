@@ -1,0 +1,24 @@
+<div class="flex items-center gap-2">
+  <button
+    type="button"
+    matIconButton
+    aria-label="Favorite"
+    (click)="favorite()"
+    [matBadge]="store.wishlistItem().length"
+    [matBadgeHidden]="store.wishlistItem().length === 0"
+  >
+    <mat-icon matButton="filled">favorite</mat-icon>
+  </button>
+
+  <button type="button" matIconButton aria-label="Shopping cart" (click)="cart()">
+    <mat-icon matButton="filled">shopping_cart</mat-icon>
+  </button>
+
+  <button type="button" matButton (click)="signIn()">
+    <span>Sign In</span>
+  </button>
+
+  <button type="button" matButton="filled" (click)="signUp()">
+    <span>Sign Up</span>
+  </button>
+</div>

@@ -1,0 +1,8 @@
+<button
+  mat-icon-button
+  class="favorite-button !w-10 !h-10 rounded-full !bg-white shadow-md"
+  [class.favorite-active]="isActive()"
+  (click)="toggle()"
+>
+  <mat-icon>{{ isActive() ? 'favorite' : 'favorite_border' }}</mat-icon>
+</button>

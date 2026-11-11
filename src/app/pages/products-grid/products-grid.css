@@ -1,0 +1,8 @@
+.favorite-button mat-icon {
+  color: #9ca3af;              /* gray when not in wishlist */
+  transition: color 0.2s;
+}
+
+.favorite-button.favorite-active mat-icon {
+  color: #ef4444 !important;   /* red when in wishlist */
+}
