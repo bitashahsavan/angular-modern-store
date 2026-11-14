@@ -1,5 +1,5 @@
 ## 🛍️ Modern Store | A modern online store built with Angular
-- 📌 <a href="https://bitashahsavan.github.io/angular-modern-store/" rel="nofollow">Demo</a>
+- 📌 <a href="https://angular-modern-store.netlify.app/" rel="nofollow">Demo</a>
 - 🙋‍♀️ Developed by Bita Shahsavan
 - 📧 Contact me: <a href="https://www.linkedin.com/in/bita-shahsavan-830471299/" rel="nofollow">LINKEDIN</a>
 - 📆 Created: November 2026
