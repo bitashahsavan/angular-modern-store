@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "dist/angular-modern-store/browser"
+  publish = "dist/modernStore/browser"
 
 [build.environment]
   NODE_VERSION = "22"
