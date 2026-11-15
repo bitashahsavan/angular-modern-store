@@ -10,7 +10,14 @@
     <mat-icon matButton="filled">favorite</mat-icon>
   </button>
 
-  <button type="button" matIconButton aria-label="Shopping cart" (click)="cart()">
+  <button
+    type="button"
+    matIconButton
+    aria-label="Shopping cart"
+    (click)="cart()"
+    [matBadge]="store.cartCount()"
+    [matBadgeHidden]="store.cartCount() === 0"
+  >
     <mat-icon matButton="filled">shopping_cart</mat-icon>
   </button>
 

@@ -23,7 +23,7 @@ export class HeaderActions {
   }
 
   cart() {
-    console.log('Cart clicked');
+    this.router.navigate(['/cart']);
   }
 
   signIn() {

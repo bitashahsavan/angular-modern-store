@@ -29,7 +29,7 @@
         <p class="rating">⭐ {{ product().rating }} ({{ product().reviewCount }} reviews)</p>
       </div>
 
-      <button type="button" (click)="addToCardCliked.emit(product())" class="cart-btn">
+      <button type="button" (click)="store.addToCart(product(), 1)" class="cart-btn">
         <mat-icon>shopping_cart</mat-icon>
         Add to cart
       </button>
